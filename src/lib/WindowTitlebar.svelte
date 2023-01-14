@@ -1,4 +1,8 @@
 <script>
+    import closeIcon from "../assets/close.svg"
+    import maximizeIcon from "../assets/maximize.svg"
+    import minimizeIcon from "../assets/minimize.svg"
+
     export let title = "Window";
     import { createEventDispatcher } from 'svelte';
     const dispatch = createEventDispatcher();
@@ -16,9 +20,9 @@
 
 <div class="titlebar" on:mousedown={e => isDragged = true}>
     <p class="title">{title}</p>
-    <img class="close button" src="../assets/close.svg" alt="Close">
-    <img class="max button" src="../assets/maximize.svg" alt="Maximize">
-    <img class="min button" src="../assets/minimize.svg" alt="Minimize">
+    <img class="close button" src={closeIcon} alt="Close">
+    <img class="max button" src={maximizeIcon} alt="Maximize">
+    <img class="min button" src={minimizeIcon} alt="Minimize">
 </div>
 
 <style>
