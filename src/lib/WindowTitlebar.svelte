@@ -16,9 +16,9 @@
 
 <div class="titlebar" on:mousedown={e => isDragged = true}>
     <p class="title">{title}</p>
-    <img class="close button" src="src/assets/close.svg" alt="Close">
-    <img class="max button" src="src/assets/maximize.svg" alt="Maximize">
-    <img class="min button" src="src/assets/minimize.svg" alt="Minimize">
+    <img class="close button" src="../assets/close.svg" alt="Close">
+    <img class="max button" src="../assets/maximize.svg" alt="Maximize">
+    <img class="min button" src="../assets/minimize.svg" alt="Minimize">
 </div>
 
 <style>
